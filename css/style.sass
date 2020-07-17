@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono)
+@import url(https://fonts.googleapis.com/css?family=Rye)
+@import url(https://fonts.googleapis.com/css?family=Hammersmith+One)
+@import partials/responsive-font
+
+$textColor : #333
+$bgColor : #f9f9f3
+$oxBlue : #002147
+$iuCream : #990000
+
+
+body
+  font-family: 'Roboto', sans-serif !important
+  //font-family: 'Hammersmith One', sans-serif !important
+  color: $textColor
+  background-color: $bgColor
+  font-size: 18px
+  margin-left: auto
+  margin-right: auto
+
+a
+  color: #111
+  text-decoration: none
+  border-bottom: 1px solid #555
+
+.nostyle
+  border-bottom: none
+
+h1
+  text-transform: uppercase
+
+  // ?? Might wanto to do this?
+  //color: white
+  //border-radius: 3px
+  //padding: 3px
+  //background-color: opacify($oxBlue, 0.5)
+
+h1,h2,h3
+  margin: 10px auto 10px auto
+
+.padded
+  padding-top: 2em
+  padding-bottom: 2em
+
+.paddedBottom
+  padding-bottom: 2em
+
+.alignLeft
+  text-align: left
+  vertical-align: text-top
+  margin: 10px auto 10px auto
+
+.hidden
+  opacity: 0
+
+.myFootStyle
+  position: absolute
+  bottom: 0
+  width: 100%
+  padding: 2em 1em !important
+  background-color: $oxBlue !important
+  //background-color: $iuCream !important
+
+.vertical-divider
+	//position: absolute
+	display: table
+	text-align: center
+
+	height: 100% // CHANGE ME!
+	width: 100%
+
+	.center-element
+		position: relative
+		display: table-cell
+		vertical-align: middle
+		&:before, &:after
+			position: absolute
+			content: ""
+			width: 1px
+			left: 50%
+			border-left: 2px solid grey
+		&:before
+			bottom: 50%
+			top: 0
+			margin-bottom: 50px
+		&:after
+			top: 50%
+			bottom: 0
+			margin-top: 50px
